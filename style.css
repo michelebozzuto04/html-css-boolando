@@ -33,6 +33,14 @@
         min-height: 70px;
         background-color: red;
     }
+
+    .row {
+        background-color: blue;
+    }
+
+    .col-4 {
+        background-color: lightgray;
+    }
 }
 
 /* Generics */
@@ -42,6 +50,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Header */
@@ -74,4 +86,40 @@ header {
         gap: 15px;
     }
 
+}
+
+/* Main Content */
+section {
+    margin: 20px 0;
+
+    .row {
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+
+    .col-4 {
+        width: calc(100% / 12 * 4);
+        padding: 1rem;
+    }
+
+    .card {
+        position: relative;
+
+        .secondary-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    }
+
+    .card:hover {
+        .main-image {
+            display: none;
+        }
+
+        .secondary-image {
+            display: block;
+        }
+    }
 }
