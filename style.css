@@ -8,6 +8,8 @@
 :root {
     --bg-primary-color: #FF6900;
     --bg-color-dark: #1A1A1A;
+    --bg-green: #008000;
+    --bg-red: #FF0000;
 
 }
 
@@ -19,6 +21,14 @@
 
 .d-flex {
     display: flex;
+}
+
+.bg-green {
+    background-color: var(--bg-green);
+}
+
+.bg-red {
+    background-color: var(--bg-red);
 }
 
 /* Debug */
@@ -106,10 +116,44 @@ section {
         position: relative;
 
         .secondary-image {
-            position: absolute;
-            top: 0;
-            left: 0;
             display: none;
+        }
+
+        .product-title {
+            text-transform: uppercase;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: red;
+        }
+
+        .product-discount-price {
+            text-decoration: line-through;
+        }
+
+        .like {
+            position: absolute;
+            top: 1rem;
+            right: 0;
+            font-size: 1.5rem;
+            background-color: white;
+            padding: 0.6rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tags {
+            gap: 10px;
+            position: absolute;
+            bottom: 6rem;
+        }
+
+        .tag {
+            color: white;
+            font-weight: bold;
+            padding: 0.2rem 0.5rem;
+            bottom: 6rem;
         }
     }
 
