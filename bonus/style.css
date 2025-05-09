@@ -150,14 +150,13 @@ section {
         .tags {
             gap: 10px;
             position: absolute;
-            bottom: 6rem;
+            top: 470px;
         }
 
         .tag {
             color: white;
             font-weight: bold;
             padding: 0.2rem 0.5rem;
-            bottom: 6rem;
         }
     }
 
@@ -167,7 +166,7 @@ section {
         }
 
         .secondary-image {
-            display: block;
+            display: inline-block;
         }
     }
 
